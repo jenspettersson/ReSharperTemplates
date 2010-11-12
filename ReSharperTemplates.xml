@@ -67,4 +67,97 @@
     </Variables>
     <CustomProperties />
   </Template>
+  <Template uid="b3222192-6e22-4f07-b3c2-671dd9b425e1" shortcut="map" description="Fluent Nhibernate Map" text="Map(x =&gt; x.$NAME$)" reformat="True" shortenQualifiedReferences="True">
+    <Context>
+      <CSharpContext context="Expression" minimumLanguageVersion="2.0" />
+    </Context>
+    <Categories>
+      <Category name="FluentNhibernate" />
+    </Categories>
+    <Variables>
+      <Variable name="NAME" expression="" initialRange="0" />
+    </Variables>
+    <CustomProperties />
+  </Template>
+  <Template uid="44328262-6f7e-452b-a4e1-4406b70c5b83" shortcut="exp" description="MEF Export attribute" text="[Export(typeof($type$))]" reformat="True" shortenQualifiedReferences="True">
+    <Context>
+      <CSharpContext context="Everywhere" minimumLanguageVersion="2.0" />
+    </Context>
+    <Categories>
+      <Category name="MEF" />
+    </Categories>
+    <Variables>
+      <Variable name="type" expression="getFileNameWithoutExtension()" initialRange="0" />
+    </Variables>
+    <CustomProperties />
+  </Template>
+  <Template uid="0191fb48-7101-4e59-863e-c6e665c2dfb5" shortcut="expcp" description="MEF Export attribute with creation policy" text="[Export(typeof ($type$)), PartCreationPolicy(CreationPolicy.$Shared$)]" reformat="True" shortenQualifiedReferences="True">
+    <Context>
+      <CSharpContext context="Everywhere" minimumLanguageVersion="2.0" />
+    </Context>
+    <Categories>
+      <Category name="MEF" />
+    </Categories>
+    <Variables>
+      <Variable name="type" expression="getFileNameWithoutExtension()" initialRange="0" />
+      <Variable name="Shared" expression="" initialRange="0" />
+    </Variables>
+    <CustomProperties />
+  </Template>
+  <Template uid="ab7e1d66-1f29-4df8-afa3-a551d74d572b" shortcut="bec" description="MSpec because of" text="Because of = () =&gt;&#xD;&#xA;{&#xD;&#xA;	$END$&#xD;&#xA;};" reformat="True" shortenQualifiedReferences="True">
+    <Context>
+      <CSharpContext context="Everywhere" minimumLanguageVersion="2.0" />
+    </Context>
+    <Categories>
+      <Category name="MSpec" />
+    </Categories>
+    <Variables />
+    <CustomProperties />
+  </Template>
+  <Template uid="cccb55b1-fd60-48ce-af85-525c3f694859" shortcut="est" description="MSpec establish context" text="Establish context = () =&gt;&#xD;&#xA;{&#xD;&#xA;	$END$&#xD;&#xA;};" reformat="True" shortenQualifiedReferences="True">
+    <Context>
+      <CSharpContext context="Everywhere" minimumLanguageVersion="2.0" />
+    </Context>
+    <Categories>
+      <Category name="MSpec" />
+    </Categories>
+    <Variables />
+    <CustomProperties />
+  </Template>
+  <Template uid="17c07756-e9cb-49b4-9000-4b9d0d052cbf" shortcut="its" description="MSpec it without body" text="It $should_do_something$ = () =&gt; $END$" reformat="True" shortenQualifiedReferences="True">
+    <Context>
+      <CSharpContext context="Everywhere" minimumLanguageVersion="2.0" />
+    </Context>
+    <Categories>
+      <Category name="MSpec" />
+    </Categories>
+    <Variables>
+      <Variable name="should_do_something" expression="" initialRange="0" />
+    </Variables>
+    <CustomProperties />
+  </Template>
+  <Template uid="6182029b-98d8-4c9c-bd51-3573e7bc2361" shortcut="itsb" description="MSpec it with body" text="It $should_do_something$ = () =&gt;&#xD;&#xA;{&#xD;&#xA;	$END$&#xD;&#xA;};" reformat="True" shortenQualifiedReferences="True">
+    <Context>
+      <CSharpContext context="Everywhere" minimumLanguageVersion="2.0" />
+    </Context>
+    <Categories>
+      <Category name="MSpec" />
+    </Categories>
+    <Variables>
+      <Variable name="should_do_something" expression="" initialRange="0" />
+    </Variables>
+    <CustomProperties />
+  </Template>
+  <Template uid="433f55fc-bb49-428c-b6e9-98476cca1ca1" shortcut="spec" description="MSpec specification class" text="[FolderSubject(typeof($class_name$))]&#xD;&#xA;public class $class_name$&#xD;&#xA;{&#xD;&#xA;	Establish context = () =&gt;&#xD;&#xA;	{&#xD;&#xA;		$END$&#xD;&#xA;	};&#xD;&#xA;&#xD;&#xA;	Because of = () =&gt;&#xD;&#xA;	{&#xD;&#xA;&#xD;&#xA;	};&#xD;&#xA;&#xD;&#xA;	It should_be_implemented;&#xD;&#xA;}" reformat="True" shortenQualifiedReferences="True">
+    <Context>
+      <CSharpContext context="Everywhere" minimumLanguageVersion="2.0" />
+    </Context>
+    <Categories>
+      <Category name="MSpec" />
+    </Categories>
+    <Variables>
+      <Variable name="class_name" expression="" initialRange="1" />
+    </Variables>
+    <CustomProperties />
+  </Template>
 </TemplatesExport>
